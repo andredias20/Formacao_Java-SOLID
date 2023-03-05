@@ -12,6 +12,22 @@ public class Funcionario {
 		dadosPessoais = new DadosPessoais(nome, cpf, cargo, salario);
 	}
 
+	public String getNome() {
+		return dadosPessoais.getNome();
+	}
+
+	public String getCpf() {
+		return dadosPessoais.getCpf();
+	}
+
+	public Cargo getCargo() {
+		return dadosPessoais.getCargo();
+	}
+
+	public BigDecimal getSalario() {
+		return dadosPessoais.getSalario();
+	}
+
 	public void atualizarSalario(BigDecimal novoSalario) {
 		this.dadosPessoais.setSalario(novoSalario);
 		this.dataUltimoReajuste = LocalDate.now();
